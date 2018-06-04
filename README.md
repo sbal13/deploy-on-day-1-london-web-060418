@@ -68,7 +68,7 @@ The structure of this project looks something like this:
 ├── js
 │   └── javascipt files
 └── students
-    └── student_name.html
+		└── student_name.html
 ```
 
 ### Files you will need to alter:
@@ -76,9 +76,9 @@ The structure of this project looks something like this:
 
 ### Files you will need to add:
 * Add three pictures to the `img/students` folder (they can be jpg or png files):
-  * A background picture
-  * A picture for the index page
-  * A picture for the profile page
+	* A background picture
+	* A picture for the index page
+	* A picture for the profile page
 * Add one HTML file to the `students/` folder. Use the `student_name.html` for reference. In fact, feel free to copy as much of the HTML from `student_name.html` into the new file you've created (just don't rename / override that file, as that will cause you some git headaches).
 
 ## Getting Started
@@ -105,25 +105,25 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 #### Make a New Branch
 
 * From the root directory, [checkout a new branch](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching). This new branch's name should be the name of the student whose profile you're going to create.  
-  * For instance, the branch would be titled `zoe-perez`.
-  * Note: The `master` branch of a project is NEVER a place to do any work. `master` is considered the build and you never break the build. So make sure you are not working or committing to the `master` branch.
+	* For instance, the branch would be titled `zoe-perez`.
+	* Note: The `master` branch of a project is NEVER a place to do any work. `master` is considered the build and you never break the build. So make sure you are not working or committing to the `master` branch.
 
 * If you haven't already, switch to the branch you created. To make sure you're where you need to be, type `git branch` in your terminal. It should return the name of your assigned student emphazised with an asterisk and master.
-  * For instance, typing `pwd` in the terminal would return:
+	* For instance, typing `pwd` in the terminal would return:
 
 ```text
-  master
+	master
 * zoe-perez
 ```
 
 #### Add Profile
 
 * In this new branch, make a new HTML file in the `students/` folder. The file name should be the name of the student you're creating the profile for. Use the file `student_name.html` to see an example of what a profile's HTML could look like.
-  * For instance, we would create a file `zoe_perez.html` in the main `students` folder.
+	* For instance, we would create a file `zoe_perez.html` in the main `students` folder.
 
 * Still in this branch you created, add the three photos detailed above to the `img/students` folder. The student you're writing the profile for may have to email you their desired pictures or send you links to them, etc.
-  * For instance, we would add the pictures titled `zoe_perez_background.jpg`, `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder that is inside the `img` folder.
-  * File endings are case senstive. When adding an \<image\> tag, make sure that the image source is identical to the name of the image file.
+	* For instance, we would add the pictures titled `zoe_perez_background.jpg`, `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder that is inside the `img` folder.
+	* File endings are case senstive. When adding an \<image\> tag, make sure that the image source is identical to the name of the image file.
 
 * Once you've completed the profile, open up `index.html`. Use the assigned ```<li></li>``` element as a template and fill it out for your fellow classmate.
 
@@ -143,13 +143,13 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 #### Push Up Your Branch
 
 * Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing.
-  * **NOTE: Do not push to master. Do not type anything that contains the word master!**
-  * You're going to push to a branch that is the same name as your local branch.
-    * For instance, if we're on the branch zoe-perez, we're going to push to zoe-perez.
+	* **NOTE: Do not push to master. Do not type anything that contains the word master!**
+	* You're going to push to a branch that is the same name as your local branch.
+		* For instance, if we're on the branch zoe-perez, we're going to push to zoe-perez.
 
 * To confirm this push worked you can do two things:
-  * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
-  * You could also go to the url of the forked repo. Notice the section that looks like ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png). You should be able to click on that arrow and to see a dropdown. From this dropdown, select the name of the branch you've been working on.
+	* Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
+	* You could also go to the url of the forked repo. Notice the section that looks like ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png). You should be able to click on that arrow and to see a dropdown. From this dropdown, select the name of the branch you've been working on.
 
 ## Next Steps
 
@@ -165,11 +165,11 @@ When [merging](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merg
 
 ```text
 > git branch
-  └── master
+	└── master
 > git merge zoe-perez
-  └── Auto-merging index.html
-  └── CONFLICT (content): Merge conflict in index.html
-  └── Automatic merge failed; fix conflicts and then commit the result.
+	└── Auto-merging index.html
+	└── CONFLICT (content): Merge conflict in index.html
+	└── Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 This just means that you will have to open the files where there are merge conflicts, in this case `index.html`, and find the part that looks like:
@@ -206,22 +206,22 @@ Note: From now on, most assignments will be completed in a group but submitted i
 ## Resources
 
 * Git Step Resources
-  * [Forking a Repo](https://help.github.com/articles/fork-a-repo)
-  * [Cloning a Repo](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository)
-  * [Branching](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching)
-  * [Adding](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files)
-  * [Committing Changes](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes)
-  * [Pushing to Remote Branches](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes)
-  * [Merging Branches](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merging)
-  * [Submitting a Pull Request](https://help.github.com/articles/using-pull-requests#sending-the-pull-request)
+	* [Forking a Repo](https://help.github.com/articles/fork-a-repo)
+	* [Cloning a Repo](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository)
+	* [Branching](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching)
+	* [Adding](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files)
+	* [Committing Changes](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes)
+	* [Pushing to Remote Branches](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes)
+	* [Merging Branches](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merging)
+	* [Submitting a Pull Request](https://help.github.com/articles/using-pull-requests#sending-the-pull-request)
 * Git Workflow Resources
-  * [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
-  * [Git Workflow](https://github.com/diaspora/diaspora/wiki/Git-Workflow)
-  * [Git Rebase Workflow Explained](http://mettadore.com/analysis/a-simple-git-rebase-workflow-explained/)
-  * [How GitHub uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
-  * [GitHub Workflow for Submitting Pull Requests](https://openshift.redhat.com/community/wiki/github-workflow-for-submitting-pull-requests)
+	* [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
+	* [Git Workflow](https://github.com/diaspora/diaspora/wiki/Git-Workflow)
+	* [Git Rebase Workflow Explained](http://mettadore.com/analysis/a-simple-git-rebase-workflow-explained/)
+	* [How GitHub uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
+	* [GitHub Workflow for Submitting Pull Requests](https://openshift.redhat.com/community/wiki/github-workflow-for-submitting-pull-requests)
 * Deploying to GitHub Pages
-    * [Documentation for how to deploy to GitHub Pages (choose "Project Site" rather than "User or Organization Site")](https://pages.github.com/)
+		* [Documentation for how to deploy to GitHub Pages (choose "Project Site" rather than "User or Organization Site")](https://pages.github.com/)
 
 ## Issues
 
